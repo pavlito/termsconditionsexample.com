@@ -1,9 +1,13 @@
+body{
+     @include gradient-y($start-color: $body-bg-1, $end-color: $body-bg-2, $start-percent: 0%, $end-percent: 100%);
+}
+
 body,html, .wrapper {
     min-height: 100vh;
 }
 a {
-    // font-weight: $font-weight-bold;
-    color:$body-color;
+    font-weight: $font-weight-bold;
+    
 }
 .wrapper {
     position: relative;

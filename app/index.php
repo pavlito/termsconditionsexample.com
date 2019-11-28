@@ -48,7 +48,7 @@
 						<div class="col-lg-7 text-white">
 							<h1 class="text-white">Disclaimer Generator</h1>
 							<p class="subtitle h4 text-white">Every website & app needs a Disclaimer.</p>
-							<a href="#wizard" class="btn btn-light mt-4">
+							<a href="#wizard" class="btn btn-primary mt-4">
 								Start Generating Your Disclaimer
 							</a>
 						</div>
@@ -122,7 +122,7 @@
 				</section>
 				<!-- about end -->
 				<!-- examples -->
-				<section class="sect-examples bg-light">
+				<section class="sect-examples">
 					<div class="container">
 						<div class="row">
 							<div class="col">
@@ -131,11 +131,25 @@
 						</div>
 						<div class="row mt-5">
 							<div class="col">
-								<div class="card card-example">
+								<div class="card card-example bg-dark">
 									<div class="card-body">
 										<div class="row align-items-center">
 											<div class="col-lg-4">
-												<img src="https://via.placeholder.com/400x300/6F0EE6/BA81FF?Text=image-here" alt="" class="w-100">
+												<img src="https://via.placeholder.com/400x300/1e1a36/1a7882?Text=image-here" alt="" class="w-100">
+											</div>
+											<div class="col-lg-8">
+												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h5>
+												<h6>Privacy Policy template from upverter</h6>
+												<p>You can find the Privacy Policy of Upverter at the following URL: <a href="#">https://upverter.com/privacy</a><br>Their agreement has over 2198 wrods</p>
+												<a href="#" class="btn btn-primary">Read More</a>
+											</div>
+										</div>
+									</div>
+									<hr>
+									<div class="card-body">
+										<div class="row align-items-center">
+											<div class="col-lg-4">
+												<img src="https://via.placeholder.com/400x300/1e1a36/1a7882?Text=image-here" alt="" class="w-100">
 											</div>
 											<div class="col-lg-8">
 												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h5>
@@ -146,51 +160,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card card-example mt-5">
-									<div class="card-body">
-										<div class="row align-items-center">
-											<div class="col-lg-4">
-												<img src="https://via.placeholder.com/400x300/6F0EE6/BA81FF?Text=image-here" alt="" class="w-100">
-											</div>
-											<div class="col-lg-8">
-												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h5>
-												<h6>Privacy Policy template from upverter</h6>
-												<p>You can find the Privacy Policy of Upverter at the following URL: <a href="#">https://upverter.com/privacy</a><br>Their agreement has over 2198 wrods</p>
-												<a href="#" class="btn btn-primary">Read More</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="card card-example mt-5">
-									<div class="card-body">
-										<div class="row align-items-center">
-											<div class="col-lg-4">
-												<img src="https://via.placeholder.com/400x300/6F0EE6/BA81FF?Text=image-here" alt="" class="w-100">
-											</div>
-											<div class="col-lg-8">
-												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h5>
-												<h6>Privacy Policy template from upverter</h6>
-												<p>You can find the Privacy Policy of Upverter at the following URL: <a href="#">https://upverter.com/privacy</a><br>Their agreement has over 2198 wrods</p>
-												<a href="#" class="btn btn-primary">Read More</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="card card-example mt-5">
-									<div class="card-body">
-										<div class="row align-items-center">
-											<div class="col-lg-4">
-												<img src="https://via.placeholder.com/400x300/6F0EE6/BA81FF?Text=image-here" alt="" class="w-100">
-											</div>
-											<div class="col-lg-8">
-												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h5>
-												<h6>Privacy Policy template from upverter</h6>
-												<p>You can find the Privacy Policy of Upverter at the following URL: <a href="#">https://upverter.com/privacy</a><br>Their agreement has over 2198 wrods</p>
-												<a href="#" class="btn btn-primary">Read More</a>
-											</div>
-										</div>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -201,84 +171,38 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-4">
-								<div class="card mt-5 mt-lg-0">
+								<div class="card mt-5 mt-lg-0 bg-dark">
 									<div class="card-body text-center">
-										<svg id="icon-pp-generator" xmlns="http://www.w3.org/2000/svg" width="60.006" height="59.995" viewBox="0 0 60.006 59.995">
-											<rect id="Rectangle_36" data-name="Rectangle 36" width="59.995" height="59.995" transform="translate(0.011)" fill="#6f0ee6" opacity="0"/>
-											<g id="Group_111" data-name="Group 111" transform="translate(0 1.162)">
-												<g id="Group_104" data-name="Group 104">
-													<g id="Group_103" data-name="Group 103">
-														<g id="Group_102" data-name="Group 102">
-															<path id="Path_96" data-name="Path 96" d="M23.25,4.98Z" transform="translate(20.351 3.194)" fill="#6f0ee6"/>
-															<path id="Path_97" data-name="Path 97" d="M51.807.62H15.491A8.214,8.214,0,0,0,7.3,8.813V42a8.179,8.179,0,0,0,.919,16.311H37.8A8.214,8.214,0,0,0,46,50.116V16.987h5.812a8.184,8.184,0,1,0,0-16.367Zm-19.8,55.252H8.217a5.775,5.775,0,1,1,0-11.549H32.009A8.2,8.2,0,0,0,32.009,55.872ZM43.6,8.794V50.116A5.756,5.756,0,1,1,37.84,44.36a1.219,1.219,0,0,0,0-2.437H9.773V8.794a5.749,5.749,0,0,1,5.718-5.756H45.977A8.083,8.083,0,0,0,43.6,8.794Zm7.012,5.775H46.014V12.582h4.593Zm2.419-.131h0V11.363a1.216,1.216,0,0,0-1.219-1.219H46.014V8.794a5.765,5.765,0,1,1,7.012,5.643Z" transform="translate(0.006 -0.62)" fill="#6f0ee6"/>
-														</g>
-													</g>
-												</g>
-												<g id="Group_106" data-name="Group 106" transform="translate(16.416 11.999)">
-													<g id="Group_105" data-name="Group 105">
-														<path id="Path_98" data-name="Path 98" d="M27.667,7.02H9.969a1.219,1.219,0,0,0,0,2.437H27.686A1.216,1.216,0,0,0,28.9,8.239,1.245,1.245,0,0,0,27.667,7.02Z" transform="translate(-8.75 -7.02)" fill="#6f0ee6"/>
-													</g>
-												</g>
-												<g id="Group_108" data-name="Group 108" transform="translate(16.416 20.642)">
-													<g id="Group_107" data-name="Group 107">
-														<path id="Path_99" data-name="Path 99" d="M27.667,11.63H9.969a1.219,1.219,0,1,0,0,2.437H27.686A1.216,1.216,0,0,0,28.9,12.849,1.232,1.232,0,0,0,27.667,11.63Z" transform="translate(-8.75 -11.63)" fill="#6f0ee6"/>
-													</g>
-												</g>
-												<g id="Group_110" data-name="Group 110" transform="translate(16.416 29.304)">
-													<g id="Group_109" data-name="Group 109">
-														<path id="Path_100" data-name="Path 100" d="M27.667,16.25H9.969a1.219,1.219,0,1,0,0,2.437H27.686A1.216,1.216,0,0,0,28.9,17.469,1.232,1.232,0,0,0,27.667,16.25Z" transform="translate(-8.75 -16.25)" fill="#6f0ee6"/>
-													</g>
-												</g>
-											</g>
-										</svg>
+										<div class="g-box g-box-1">
+											<span>PP</span>
+										</div>
 										<h5 class="mt-4">Privacy Policy Generator</h5>
 										<p>Every website needs a Privacy Policy to comply with the GDPR, CCPA and CalOPPA laws.</p>
-										<a href="https://www.generateprivacypolicy.com" class="btn btn-outline-primary btn-block mt-4">Visit Privacy Policy Generator</a>
+										<a href="https://www.generateprivacypolicy.com" class="btn btn-pp btn-block mt-4">Visit Privacy Policy Generator</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4">
-								<div class="card mt-5 mt-lg-0">
+								<div class="card mt-5 mt-lg-0 bg-dark">
 									<div class="card-body text-center">
-										<svg id="icon-tc-generator" xmlns="http://www.w3.org/2000/svg" width="59.995" height="60" viewBox="0 0 59.995 60">
-											<rect id="Rectangle_35" data-name="Rectangle 35" width="59.995" height="59.995" fill="#6f0ee6" opacity="0"/>
-											<g id="Group_100" data-name="Group 100" transform="translate(4.5)">
-												<g id="Group_97" data-name="Group 97">
-													<g id="Group_96" data-name="Group 96">
-														<path id="Path_94" data-name="Path 94" d="M88.74,4.818C79.759.506,64.554.019,63.879,0c-.637,0-15.843.506-24.823,4.818A1.141,1.141,0,0,0,38.4,5.85V30.41c0,.75.45,18.58,25.1,29.491a1.121,1.121,0,0,0,.919,0c24.561-10.912,24.954-28.76,24.954-29.51V5.85A1.113,1.113,0,0,0,88.74,4.818ZM87.109,30.391c0,.169-.431,16.892-23.229,27.223C41.175,47.34,40.669,31.085,40.65,30.391V6.581c8.4-3.75,22.442-4.275,23.229-4.293s14.83.562,23.229,4.293Z" transform="translate(-38.4)" fill="#6f0ee6"/>
-													</g>
-												</g>
-												<g id="Group_99" data-name="Group 99" transform="translate(5.418 6.431)">
-													<g id="Group_98" data-name="Group 98">
-														<path id="Path_95" data-name="Path 95" d="M80.831,7.2C73.8,3.767,61.932,3.43,61.426,3.43h-.075c-.544.019-12.412.394-19.4,3.768h0A1.141,1.141,0,0,0,41.29,8.23V27.316c0,.6.356,14.624,19.63,23.154a1.121,1.121,0,0,0,.919,0C81.112,41.921,81.468,27.9,81.468,27.3V8.23A1.124,1.124,0,0,0,80.831,7.2ZM43.54,8.961C50.046,6.149,60.657,5.736,61.351,5.7A74.7,74.7,0,0,1,74.419,7.423L43.54,26.566ZM79.162,27.3c-.019.525-.412,12.955-17.811,20.886A35.627,35.627,0,0,1,49.164,39.54l30-18.674ZM47.664,37.74a21.941,21.941,0,0,1-3.956-8.624L77.325,8.286q.928.309,1.8.675l.037,9.224Z" transform="translate(-41.29 -3.43)" fill="#6f0ee6"/>
-													</g>
-												</g>
-											</g>
-										</svg>
+										<div class="g-box g-box-2">
+											<span>TC</span>
+										</div>
 										<h5 class="mt-4">Privacy Policy Generator</h5>
 										<p>Every website needs a Privacy Policy to comply with the GDPR, CCPA and CalOPPA laws.</p>
-										<a href="https://www.generateprivacypolicy.com" class="btn btn-outline-primary btn-block mt-4">Visit Privacy Policy Generator</a>
+										<a href="https://www.generateprivacypolicy.com" class="btn btn-tc btn-block mt-4">Visit Privacy Policy Generator</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4">
-								<div class="card mt-5 mt-lg-0">
+								<div class="card mt-5 mt-lg-0 bg-dark">
 									<div class="card-body text-center">
-										<svg id="icon-d-generator" xmlns="http://www.w3.org/2000/svg" width="59.995" height="59.995" viewBox="0 0 59.995 59.995">
-											<rect id="Rectangle_34" data-name="Rectangle 34" width="59.995" height="59.995" fill="#6f0ee6" opacity="0"/>
-											<g id="Group_94" data-name="Group 94" transform="translate(1.875 1.875)">
-												<g id="Group_93" data-name="Group 93">
-													<g id="Group_92" data-name="Group 92">
-														<path id="Path_91" data-name="Path 91" d="M120.159,1H78.087A7.13,7.13,0,0,0,71,8.087v42.09a7.13,7.13,0,0,0,7.087,7.087h42.09a7.13,7.13,0,0,0,7.087-7.087V8.087A7.158,7.158,0,0,0,120.159,1Zm4.912,49.159H125a4.929,4.929,0,0,1-4.912,4.912h-42a4.929,4.929,0,0,1-4.912-4.912V8.087a4.929,4.929,0,0,1,4.912-4.912h42.09a4.929,4.929,0,0,1,4.912,4.912l-.019,42.072Z" transform="translate(-71 -1)" fill="#6f0ee6"/>
-														<path id="Path_92" data-name="Path 92" d="M94.5,18.981H92.043a5.621,5.621,0,0,0-.75-1.762L93,15.512a1.114,1.114,0,0,0-1.575-1.575l-1.706,1.706a5.813,5.813,0,0,0-1.762-.75V12.437a1.087,1.087,0,0,0-2.175,0v2.456a5.621,5.621,0,0,0-1.762.75l-1.706-1.706a1.114,1.114,0,1,0-1.575,1.575l1.706,1.706a5.812,5.812,0,0,0-.75,1.762H79.237a1.087,1.087,0,1,0,0,2.175h2.456a5.621,5.621,0,0,0,.75,1.762l-1.706,1.706a1.156,1.156,0,0,0,0,1.575,1,1,0,0,0,1.5,0L84,24.493a5.812,5.812,0,0,0,1.762.75V27.7a1.087,1.087,0,0,0,2.175,0V25.243a5.621,5.621,0,0,0,1.762-.75L91.461,26.2a1,1,0,0,0,1.5,0,1.156,1.156,0,0,0,0-1.575l-1.706-1.762a5.114,5.114,0,0,0,.75-1.762h2.456a1.065,1.065,0,0,0,1.087-1.087A.97.97,0,0,0,94.5,18.981Zm-7.631,4.143a3.056,3.056,0,1,1,3.056-3.056A2.987,2.987,0,0,1,86.868,23.124Z" transform="translate(-64.745 8.055)" fill="#6f0ee6"/>
-														<path id="Path_93" data-name="Path 93" d="M116.564,19.788a4.012,4.012,0,1,0,0-8.024H115.4A7.035,7.035,0,0,0,108.39,5.37H82.367a7.13,7.13,0,0,0-7.087,7.087V38.4a7.13,7.13,0,0,0,7.087,7.087h25.948A7.13,7.13,0,0,0,115.4,38.4V37.58h1.087a4.012,4.012,0,1,0,0-8.024H115.4v-9.73l1.162-.037Zm-3.337,18.449a4.929,4.929,0,0,1-4.912,4.912H82.367a4.929,4.929,0,0,1-4.912-4.912V12.288a4.929,4.929,0,0,1,4.912-4.912h25.948a4.906,4.906,0,0,1,4.837,4.218H112.14a4.012,4.012,0,0,0,0,8.024h1.087v9.73H112.14a4.012,4.012,0,0,0,0,8.024h1.087v.862Zm3.393-6.674a1.814,1.814,0,0,1,1.762,1.837,1.84,1.84,0,0,1-1.837,1.837H112.2a1.837,1.837,0,0,1,0-3.675Zm-4.5-14.024a1.837,1.837,0,1,1,0-3.675h4.425a1.837,1.837,0,1,1,0,3.675Z" transform="translate(-67.256 2.823)" fill="#6f0ee6"/>
-													</g>
-												</g>
-											</g>
-										</svg>
+										<div class="g-box g-box-3">
+											<span>D</span>
+										</div>
 										<h5 class="mt-4">Privacy Policy Generator</h5>
 										<p>Every website needs a Privacy Policy to comply with the GDPR, CCPA and CalOPPA laws.</p>
-										<a href="https://www.generateprivacypolicy.com" class="btn btn-outline-primary btn-block mt-4">Visit Privacy Policy Generator</a>
+										<a href="https://www.generateprivacypolicy.com" class="btn btn-d btn-block mt-4">Visit Privacy Policy Generator</a>
 									</div>
 								</div>
 							</div>

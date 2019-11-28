@@ -9,3 +9,26 @@
 		overflow-y: scroll;
 	}
 }
+
+.g-box {
+	width:3.75rem;
+	height: 3.75rem;
+    margin:0 auto;
+    background: url("/assets/images/box-1.svg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+    	font-size:1.6rem;
+    	font-weight: bold;
+    }
+}
+
+.g-box-2 {
+	background: url("/assets/images/box-2.svg") ;
+}
+
+.g-box-3 {
+	background: url("/assets/images/box-3.svg") ;
+}

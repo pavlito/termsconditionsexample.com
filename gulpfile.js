@@ -20,7 +20,7 @@ gulp.task('log', function() {
 
 gulp.task('browser-sync', function() {
     php.server({
-        base: 'c:/t4web/disclaimer/app',
+        base: 'c:/t4web/termsconditionsexample.com/app',
         index: "index.php",
         port: 8010,
         keepalive: true
