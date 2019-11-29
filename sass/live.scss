@@ -16,8 +16,17 @@
 
 @import "custom/reboot";
 
+
+body {
+	background: $white;
+	color:$dark;
+}
+a {
+	color:$dark;
+}
 .sect-live {
     h1, h2, h3, h4, h5, h6 {
+    	color:$dark;
         margin-top: $preview-heading-margin;
     }
 }

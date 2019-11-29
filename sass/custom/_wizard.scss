@@ -67,8 +67,7 @@
         border-bottom: 1px solid $wizard-header-title-border;
         border-top-left-radius: $border-radius;
         border-top-right-radius: $border-radius;
-        padding: $card-spacer-x;
-
+        padding: $card-spacer-x*1.4 $card-spacer-y;
         ul {
             list-style: none;
             margin: 0;
@@ -94,7 +93,7 @@
 
         h3 {
             font-size: $font-size-base;
-            color: $body-color;
+            color: $dark;
         }
 
         .form-group {

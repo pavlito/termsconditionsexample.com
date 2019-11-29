@@ -30,6 +30,7 @@
 		<meta name="msapplication-square310x310logo" content="/assets/images/mstile-310x310.png" />
 		
 		<!-- styles -->
+		<link href="/assets/css/main.css" rel="stylesheet" />
 		<link href="/assets/css/style.css" rel="stylesheet" />
 	</head>
 	<body>

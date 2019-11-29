@@ -1,87 +1,88 @@
 <?php require '_global.php'; ?>
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	
-	<title>Disclaimer Generator: Generate Your Disclaimer</title>
-	<meta name="description" content="World's Easiest Disclaimer Generator: Generate your Disclaimer in just 10 seconds" />
-  
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/apple-touch-icon-60x60.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/apple-touch-icon-152x152.png" />
-	<link rel="icon" type="image/png" href="/assets/images/favicon-196x196.png" sizes="196x196" />
-	<link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="/assets/images/favicon-128.png" sizes="128x128" />
-	<meta name="application-name" content="&nbsp;"/>
-	<meta name="msapplication-TileColor" content="#FFFFFF" />
-	<meta name="msapplication-TileImage" content="/assets/images/mstile-144x144.png" />
-	<meta name="msapplication-square70x70logo" content="/assets/images/mstile-70x70.png" />
-	<meta name="msapplication-square150x150logo" content="/assets/images/mstile-150x150.png" />
-	<meta name="msapplication-wide310x150logo" content="/assets/images/mstile-310x150.png" />
-	<meta name="msapplication-square310x310logo" content="/assets/images/mstile-310x310.png" />
-	
-	<!-- styles -->
-	<link href="/assets/css/main.css" rel="stylesheet" />
-	<link href="/assets/css/style.css" rel="stylesheet" />
-</head>
-<body>
-	<div class="wrapper">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		
-		<!-- header -->
-		<?php include('_header.php'); ?>
+		<title>Disclaimer Generator: Generate Your Disclaimer</title>
+		<meta name="description" content="World's Easiest Disclaimer Generator: Generate your Disclaimer in just 10 seconds" />
 		
-		<div class="page">
-			<!-- hero start -->
-			<section class="hero">
-				<div class="container">
-					<div class="row d-flex align-items-center">
-						<div class="col-lg-7 text-white">
-							<h1 class="text-white">Disclaimer Generator</h1>
-							<p class="subtitle h4 text-white">Every website & app needs a Disclaimer.</p>
-							<a href="#wizard" class="btn btn-primary mt-4">
-								Start Generating Your Disclaimer
-							</a>
-						</div>
-						<div class="col-lg-5 add-z mt-5 mt-lg-0">
-              <div id="wizard" class="wizard">
-							<?php
-                  $supported_countries = false;
-                  $fields = [
-                      'user_email=' . $_ENV['LCG_API_ACCESS_USER'],
-                      'access_token=' . $_ENV['LCG_API_ACCESS_TOKEN'],
-                      'agreement_name=disclaimer',
-                      'agreement_version=1.0',
-                      'country=',
-                      'wizard_lang=en',
-                      'supported_countries=' . $supported_countries,
-                  ];
-                  $curl = curl_init($_ENV['LCG_API_URL_BASE'] . 'wizard_create?' . join('&', $fields));
-                  curl_setopt($curl, CURLOPT_HEADER, false);
-                  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-                  $resp = curl_exec($curl);
-                  curl_close($curl);
-                  if ($resp === false) {
-                      $s = 'Query error';
-                  } else {
-                      $resp = json_decode($resp, true);
-                      if($resp['result'] != 0) {
-                          $s = $resp['result_message'];
-                      } else {
-                          $s = $resp['wizard_html'];
-                      }
-                  }
-                  echo $s;
-							?>
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="/assets/images/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="/assets/images/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="&nbsp;"/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="/assets/images/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="/assets/images/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="/assets/images/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="/assets/images/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="/assets/images/mstile-310x310.png" />
+		
+		<!-- styles -->
+		<link href="/assets/css/main.css" rel="stylesheet" />
+		<link href="/assets/css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="wrapper">
+			
+			<!-- header -->
+			<?php include('_header.php'); ?>
+			
+			<div class="page">
+				<!-- hero start -->
+				<section class="hero">
+					<div class="container">
+						<div class="row d-flex align-items-center">
+							<div class="col-lg-7 text-white">
+								<h1 class="text-white">Disclaimer Generator</h1>
+								<p class="subtitle h4 text-white">Every website & app needs a Disclaimer.</p>
+								<a href="#wizard" class="btn btn-primary mt-4">
+									Start Generating Your Disclaimer
+								</a>
+							</div>
+							<div class="col-lg-5 add-z mt-5 mt-lg-0">
+								<div id="wizard" class="wizard">
+									<?php
+									$supported_countries = false;
+									$fields = [
+									'user_email=' . $_ENV['LCG_API_ACCESS_USER'],
+									'access_token=' . $_ENV['LCG_API_ACCESS_TOKEN'],
+									'agreement_name=disclaimer',
+									'agreement_version=1.0',
+									'country=',
+									'wizard_lang=en',
+									'supported_countries=' . $supported_countries,
+									];
+									$curl = curl_init($_ENV['LCG_API_URL_BASE'] . 'wizard_create?' . join('&', $fields));
+									curl_setopt($curl, CURLOPT_HEADER, false);
+									curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+									$resp = curl_exec($curl);
+									curl_close($curl);
+									if ($resp === false) {
+									$s = 'Query error';
+									} else {
+									$resp = json_decode($resp, true);
+									if($resp['result'] != 0) {
+									$s = $resp['result_message'];
+									} else {
+									$s = $resp['wizard_html'];
+									}
+									}
+									echo $s;
+									?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -107,18 +108,6 @@
 							</div>
 						</div>
 					</div>
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="bg bg-1" width="46" height="46" viewBox="0 0 46 46">
-						<defs>
-						<linearGradient id="linear-gradient" x1="0.24" y1="0.947" x2="0.726" y2="0.112" gradientUnits="objectBoundingBox">
-							<stop offset="0" stop-color="#6821c0"/>
-							<stop offset="1" stop-color="#ba82ff"/>
-						</linearGradient>
-						</defs>
-						<circle id="Ellipse_19" data-name="Ellipse 19" cx="23" cy="23" r="23" opacity="0.3" fill="url(#linear-gradient)"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="251" class="bg bg-2" height="251" viewBox="0 0 251 251">
-						<circle id="Ellipse_18" data-name="Ellipse 18" cx="110" cy="110" r="110" transform="translate(15.5 15.5)" fill="none" stroke="#6f0ee6" stroke-width="31" opacity="0.08"/>
-					</svg>
 				</section>
 				<!-- about end -->
 				<!-- examples -->
@@ -138,7 +127,7 @@
 												<img src="https://via.placeholder.com/400x300/1e1a36/1a7882?Text=image-here" alt="" class="w-100">
 											</div>
 											<div class="col-lg-8">
-												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h5>
+												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h4>
 												<h6>Privacy Policy template from upverter</h6>
 												<p>You can find the Privacy Policy of Upverter at the following URL: <a href="#">https://upverter.com/privacy</a><br>Their agreement has over 2198 wrods</p>
 												<a href="#" class="btn btn-primary">Read More</a>
@@ -152,7 +141,63 @@
 												<img src="https://via.placeholder.com/400x300/1e1a36/1a7882?Text=image-here" alt="" class="w-100">
 											</div>
 											<div class="col-lg-8">
-												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h5>
+												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h4>
+												<h6>Privacy Policy template from upverter</h6>
+												<p>You can find the Privacy Policy of Upverter at the following URL: <a href="#">https://upverter.com/privacy</a><br>Their agreement has over 2198 wrods</p>
+												<a href="#" class="btn btn-primary">Read More</a>
+											</div>
+										</div>
+									</div>
+									<hr>
+									<div class="card-body">
+										<div class="row align-items-center">
+											<div class="col-lg-4">
+												<img src="https://via.placeholder.com/400x300/1e1a36/1a7882?Text=image-here" alt="" class="w-100">
+											</div>
+											<div class="col-lg-8">
+												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h4>
+												<h6>Privacy Policy template from upverter</h6>
+												<p>You can find the Privacy Policy of Upverter at the following URL: <a href="#">https://upverter.com/privacy</a><br>Their agreement has over 2198 wrods</p>
+												<a href="#" class="btn btn-primary">Read More</a>
+											</div>
+										</div>
+									</div>
+									<hr>
+									<div class="card-body">
+										<div class="row align-items-center">
+											<div class="col-lg-4">
+												<img src="https://via.placeholder.com/400x300/1e1a36/1a7882?Text=image-here" alt="" class="w-100">
+											</div>
+											<div class="col-lg-8">
+												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h4>
+												<h6>Privacy Policy template from upverter</h6>
+												<p>You can find the Privacy Policy of Upverter at the following URL: <a href="#">https://upverter.com/privacy</a><br>Their agreement has over 2198 wrods</p>
+												<a href="#" class="btn btn-primary">Read More</a>
+											</div>
+										</div>
+									</div>
+									<hr>
+									<div class="card-body">
+										<div class="row align-items-center">
+											<div class="col-lg-4">
+												<img src="https://via.placeholder.com/400x300/1e1a36/1a7882?Text=image-here" alt="" class="w-100">
+											</div>
+											<div class="col-lg-8">
+												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h4>
+												<h6>Privacy Policy template from upverter</h6>
+												<p>You can find the Privacy Policy of Upverter at the following URL: <a href="#">https://upverter.com/privacy</a><br>Their agreement has over 2198 wrods</p>
+												<a href="#" class="btn btn-primary">Read More</a>
+											</div>
+										</div>
+									</div>
+									<hr>
+									<div class="card-body">
+										<div class="row align-items-center">
+											<div class="col-lg-4">
+												<img src="https://via.placeholder.com/400x300/1e1a36/1a7882?Text=image-here" alt="" class="w-100">
+											</div>
+											<div class="col-lg-8">
+												<h4 class="text-primary mt-5 mt-lg-0">Upverter</h4>
 												<h6>Privacy Policy template from upverter</h6>
 												<p>You can find the Privacy Policy of Upverter at the following URL: <a href="#">https://upverter.com/privacy</a><br>Their agreement has over 2198 wrods</p>
 												<a href="#" class="btn btn-primary">Read More</a>
@@ -171,55 +216,49 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-4">
-								<div class="card mt-5 mt-lg-0 bg-dark">
-									<div class="card-body text-center">
-										<div class="g-box g-box-1">
-											<span>PP</span>
+								<div class="card-outer mt-5 mt-lg-0 card-pp">
+									<div class="card bg-dark">
+										<div class="card-body text-center">
+											<div class="g-box g-box-1">
+												<span>PP</span>
+											</div>
+											<h5 class="mt-4">Privacy Policy Generator</h5>
+											<p>Every website needs a Privacy Policy to comply with the GDPR, CCPA and CalOPPA laws.</p>
+											<a href="https://www.generateprivacypolicy.com" class="btn btn-pp btn-block mt-4">Visit Privacy Policy Generator</a>
 										</div>
-										<h5 class="mt-4">Privacy Policy Generator</h5>
-										<p>Every website needs a Privacy Policy to comply with the GDPR, CCPA and CalOPPA laws.</p>
-										<a href="https://www.generateprivacypolicy.com" class="btn btn-pp btn-block mt-4">Visit Privacy Policy Generator</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4">
-								<div class="card mt-5 mt-lg-0 bg-dark">
-									<div class="card-body text-center">
-										<div class="g-box g-box-2">
-											<span>TC</span>
+								<div class="card-outer mt-5 mt-lg-0 card-tc">
+									<div class="card bg-dark">
+										<div class="card-body text-center">
+											<div class="g-box g-box-2">
+												<span>TC</span>
+											</div>
+											<h5 class="mt-4">Privacy Policy Generator</h5>
+											<p>Every website needs a Privacy Policy to comply with the GDPR, CCPA and CalOPPA laws.</p>
+											<a href="https://www.generateprivacypolicy.com" class="btn btn-tc btn-block mt-4">Visit Privacy Policy Generator</a>
 										</div>
-										<h5 class="mt-4">Privacy Policy Generator</h5>
-										<p>Every website needs a Privacy Policy to comply with the GDPR, CCPA and CalOPPA laws.</p>
-										<a href="https://www.generateprivacypolicy.com" class="btn btn-tc btn-block mt-4">Visit Privacy Policy Generator</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4">
-								<div class="card mt-5 mt-lg-0 bg-dark">
-									<div class="card-body text-center">
-										<div class="g-box g-box-3">
-											<span>D</span>
+								<div class="card-outer mt-5 mt-lg-0 card-d">
+									<div class="card bg-dark">
+										<div class="card-body text-center">
+											<div class="g-box g-box-3">
+												<span>D</span>
+											</div>
+											<h5 class="mt-4">Privacy Policy Generator</h5>
+											<p>Every website needs a Privacy Policy to comply with the GDPR, CCPA and CalOPPA laws.</p>
+											<a href="https://www.generateprivacypolicy.com" class="btn btn-d btn-block mt-4">Visit Privacy Policy Generator</a>
 										</div>
-										<h5 class="mt-4">Privacy Policy Generator</h5>
-										<p>Every website needs a Privacy Policy to comply with the GDPR, CCPA and CalOPPA laws.</p>
-										<a href="https://www.generateprivacypolicy.com" class="btn btn-d btn-block mt-4">Visit Privacy Policy Generator</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" class="bg g-bg-1" viewBox="0 0 108 108">
-						<circle id="Ellipse_23" data-name="Ellipse 23" cx="44" cy="44" r="44" transform="translate(10 10)" fill="none" stroke="#ffb96a" stroke-width="20" opacity="0.2"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" class="bg g-bg-2" viewBox="0 0 58 58">
-						<circle id="Ellipse_24" data-name="Ellipse 24" cx="26" cy="26" r="26" transform="translate(3 3)" fill="none" stroke="#ffb96a" stroke-width="6" opacity="0.2"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="151" height="151" class="bg g-bg-3" viewBox="0 0 151 151">
-						<circle id="Ellipse_22" data-name="Ellipse 22" cx="60" cy="60" r="60" transform="translate(15.5 15.5)" fill="none" stroke="#ffb96a" stroke-width="31" opacity="0.2"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" width="86" height="86"  class="bg g-bg-4" viewBox="0 0 86 86">
-						<circle id="Ellipse_25" data-name="Ellipse 25" cx="35" cy="35" r="35" transform="translate(8 8)" fill="none" stroke="#ffb96a" stroke-width="16" opacity="0.2"/>
-					</svg>
 				</section>
 				<!-- generators end -->
 				<!-- Preview start -->
@@ -234,17 +273,18 @@
 							<div class="col-12">
 								<div class="card">
 									<div class="card-body">
-										<div class="header d-flex align-items-center">
+										<div class="header d-flex align-items-center justify-content-between">
+											<p class="h5 text-purple mb-0 font-weight-normal">Disclaimer Preview</p>
 											<div class="icons">
-												<svg xmlns="http://www.w3.org/2000/svg" width="68" height="15" viewBox="0 0 68 15">
-													<g id="Group_37" data-name="Group 37" transform="translate(-1436 -1500)">
-														<circle id="Ellipse_8" data-name="Ellipse 8" cx="7.5" cy="7.5" r="7.5" transform="translate(1489 1500)" fill="#ff4848"/>
-														<circle id="Ellipse_9" data-name="Ellipse 9" cx="7.5" cy="7.5" r="7.5" transform="translate(1462 1500)" fill="#ffc848"/>
-														<circle id="Ellipse_10" data-name="Ellipse 10" cx="7.5" cy="7.5" r="7.5" transform="translate(1436 1500)" fill="#5fcc00"/>
+												<svg xmlns="http://www.w3.org/2000/svg" width="105" height="23" viewBox="0 0 105 23">
+													<g id="Group_37" data-name="Group 37" transform="translate(-1435.512 -1500)">
+														<circle id="Ellipse_8" data-name="Ellipse 8" cx="11.5" cy="11.5" r="11.5" transform="translate(1517.512 1500)" fill="#056cfe"/>
+														<circle id="Ellipse_9" data-name="Ellipse 9" cx="11.5" cy="11.5" r="11.5" transform="translate(1476.512 1500)" fill="#6734ff"/>
+														<ellipse id="Ellipse_10" data-name="Ellipse 10" cx="12" cy="11.5" rx="12" ry="11.5" transform="translate(1435.512 1500)" fill="#05e4fc"/>
 													</g>
 												</svg>
 											</div>
-											<p class="text-muted mb-0 font-weight-normal ml-auto">Disclaimer Preview</p>
+											
 										</div>
 									</div>
 									<hr>
@@ -268,25 +308,21 @@
 							</div>
 						</div>
 					</div>
-					<svg xmlns="http://www.w3.org/2000/svg" width="342" height="342" class="bg p-bg-1" viewBox="0 0 342 342">
-						<circle id="p-bg-2" cx="151" cy="151" r="151" transform="translate(20 20)" fill="none" stroke="#6f0ee6" stroke-width="40" opacity="0.1"/>
-					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="192" height="192" class="bg p-bg-2" viewBox="0 0 192 192">
-						<defs>
-						<linearGradient id="linear-gradient" x1="0.24" y1="0.947" x2="0.726" y2="0.112" gradientUnits="objectBoundingBox">
-							<stop offset="0" stop-color="#6821c0"/>
-							<stop offset="1" stop-color="#ba82ff"/>
-						</linearGradient>
-						</defs>
-						<circle id="p-bg-1" cx="96" cy="96" r="96" opacity="0.54" fill="url(#linear-gradient)"/>
-					</svg>
 				</section>
 				
 				<!-- footer -->
 				<?php include('_footer.php'); ?>
 			</div>
-			
-			<script src="/assets/js/jquery.slim.min.js" type="text/javascript"></script>
-			<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
-		</body>
-	</html>
+			<img src="/assets/images/1.png" class="bg bg-1" alt="">
+			<img src="/assets/images/2.png" class="bg bg-2" alt="">
+			<img src="/assets/images/3.png" class="bg bg-3" alt="">
+			<img src="/assets/images/4.png" class="bg bg-4" alt="">
+			<img src="/assets/images/5.png" class="bg bg-5" alt="">
+			<img src="/assets/images/6.png" class="bg bg-6" alt="">
+			<img src="/assets/images/7.png" class="bg bg-7" alt="">
+		</div>
+		<!-- wrapper end -->
+		<script src="/assets/js/jquery.slim.min.js" type="text/javascript"></script>
+		<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+	</body>
+</html>

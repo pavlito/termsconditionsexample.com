@@ -1,6 +1,6 @@
 .btn {
 	&.btn-primary {
-		@include gradient-y($start-color: $cyan2, $end-color: $cyan, $start-percent: 30%, $end-percent: 80%);
+		@include gradient-y($start-color: $cyan2, $end-color: $cyan, $start-percent: 60%, $end-percent: 100%);
 		color:$white;
 		@include transition($transition-base);
 		&:hover {
@@ -10,36 +10,3 @@
 	}
 }
 
-
-.btn-pp {
-	padding-left:0;
-	padding-right:0;
-	@include gradient-directional($start-color: #6734FF, $end-color: #05BAEE, $deg: 45deg);
-	@include transition($transition-base);
-	&:hover {
-		@include gradient-directional($start-color:darken(#6734FF, 10%), $end-color: #6734FF, $deg: 45deg);
-		@include transition($transition-base);
-	}
-}
-
-.btn-tc {
-	padding-left:0;
-	padding-right:0;
-	@include gradient-directional($start-color: #FC4B05, $end-color: #FEAC5E, $deg: 45deg);
-	@include transition($transition-base);
-	&:hover {
-		@include gradient-directional($start-color:darken(#FC4B05, 10%), $end-color: #FC4B05, $deg: 45deg);
-		@include transition($transition-base);
-	}
-}
-
-.btn-d {
-	padding-left:0;
-	padding-right:0;
-	@include gradient-directional($start-color: #A35EFE, $end-color: #F405FC, $deg: 45deg);
-	@include transition($transition-base);
-	&:hover {
-		@include gradient-directional($start-color:darken(#F405FC, 10%), $end-color: #F405FC, $deg: 45deg);
-		@include transition($transition-base);
-	}
-}

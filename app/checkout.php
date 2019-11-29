@@ -1,31 +1,31 @@
 <?php
 require '_global.php';
 
-$curl = curl_init($_ENV['LCG_API_URL_BASE'] . 'wizard_checkout');
-curl_setopt($curl, CURLOPT_POST, true);
-curl_setopt($curl, CURLOPT_HEADER, false);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl, CURLOPT_POSTFIELDS, [
-  'user_email' => $_ENV['LCG_API_ACCESS_USER'],
-  'access_token' => $_ENV['LCG_API_ACCESS_TOKEN'],
-  'agreement_name' => 'disclaimer',
-  'agreement_version' => '1.0',
-  'email_api_responsible' => FALSE,
-  'email_lang' => 'en',
-  'customer_email' => $_POST['email_address'],
-  'fields' => json_encode($_POST),
-]);
-$resp = curl_exec($curl);
-curl_close($curl);
-if ($resp === false) {
-  echo 'Query error';
-} else {
-  $data = json_decode($resp, true);
-  if ($data['result'] != 0) {
-    echo 'Error: ' . $data['result_message'];
-  } else {
-    $token = $data['agreement_token'];
-    $lang = $data['agreement_lang'];
+// $curl = curl_init($_ENV['LCG_API_URL_BASE'] . 'wizard_checkout');
+// curl_setopt($curl, CURLOPT_POST, true);
+// curl_setopt($curl, CURLOPT_HEADER, false);
+// curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+// curl_setopt($curl, CURLOPT_POSTFIELDS, [
+//   'user_email' => $_ENV['LCG_API_ACCESS_USER'],
+//   'access_token' => $_ENV['LCG_API_ACCESS_TOKEN'],
+//   'agreement_name' => 'disclaimer',
+//   'agreement_version' => '1.0',
+//   'email_api_responsible' => FALSE,
+//   'email_lang' => 'en',
+//   'customer_email' => $_POST['email_address'],
+//   'fields' => json_encode($_POST),
+// ]);
+// $resp = curl_exec($curl);
+// curl_close($curl);
+// if ($resp === false) {
+//   echo 'Query error';
+// } else {
+//   $data = json_decode($resp, true);
+//   if ($data['result'] != 0) {
+//     echo 'Error: ' . $data['result_message'];
+//   } else {
+//     $token = $data['agreement_token'];
+//     $lang = $data['agreement_lang'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -61,7 +61,7 @@ if ($resp === false) {
 
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="wrapper checkout-page">
 			<!-- header -->
 			<?php include('_header.php'); ?>
 			
@@ -72,11 +72,7 @@ if ($resp === false) {
 						<div class="row pt-2 pb-2 pb-mt-5 pb-md-5">
 							<div class="col-12 text-center">
 								<h3>Please wait your agreement is loading</h3>
-								<div class="loader">
-									<div class="inner one"></div>
-									<div class="inner two"></div>
-									<div class="inner three"></div>
-								</div>
+								<div class="loader"></div>
 								
 								<script type="text/javascript">
 									window.setTimeout(function(){
@@ -99,6 +95,6 @@ if ($resp === false) {
 	</body>
 </html>
 <?php
-  }
-}
+//   }
+// }
 ?>
