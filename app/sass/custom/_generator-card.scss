@@ -1,0 +1,74 @@
+
+.g-box {
+	width:3.75rem;
+	height: 3.75rem;
+    margin:0 auto;
+    background: url("/assets/images/box-1.svg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+    	font-size:1.6rem;
+    	font-weight: bold;
+    }
+}
+
+.card-outer {
+    padding:5px;
+    border-radius:$border-radius;
+    @include gradient-directional($start-color: #6734FF, $end-color: #05BAEE, $deg: 45deg);
+    
+    &.card-tc {
+        @include gradient-directional($start-color: #FC4B05, $end-color: #FEAC5E, $deg: 45deg);
+    }
+    &.card-d {
+        @include gradient-directional($start-color: #A35EFE, $end-color: #F405FC, $deg: 45deg);
+    }
+    .card-body {
+        padding-top:$spacer*2.5;
+    }
+}
+
+.g-box-2 {
+	background: url("/assets/images/box-2.svg") ;
+}
+
+.g-box-3 {
+	background: url("/assets/images/box-3.svg") ;
+}
+
+
+
+.btn-pp {
+    padding-left:0;
+    padding-right:0;
+    @include gradient-directional($start-color: #6734FF, $end-color: #05BAEE, $deg: 45deg);
+    @include transition($transition-base);
+    &:hover {
+        @include gradient-directional($start-color:darken(#6734FF, 10%), $end-color: #6734FF, $deg: 45deg);
+        @include transition($transition-base);
+    }
+}
+
+.btn-tc {
+    padding-left:0;
+    padding-right:0;
+    @include gradient-directional($start-color: #FC4B05, $end-color: #FEAC5E, $deg: 45deg);
+    @include transition($transition-base);
+    &:hover {
+        @include gradient-directional($start-color:darken(#FC4B05, 10%), $end-color: #FC4B05, $deg: 45deg);
+        @include transition($transition-base);
+    }
+}
+
+.btn-d {
+    padding-left:0;
+    padding-right:0;
+    @include gradient-directional($start-color: #A35EFE, $end-color: #F405FC, $deg: 45deg);
+    @include transition($transition-base);
+    &:hover {
+        @include gradient-directional($start-color:darken(#F405FC, 10%), $end-color: #F405FC, $deg: 45deg);
+        @include transition($transition-base);
+    }
+}

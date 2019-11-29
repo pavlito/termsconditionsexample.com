@@ -1,5 +1,12 @@
 .btn {
-	&.btn-light {
-		color:$primary;
+	&.btn-primary {
+		@include gradient-y($start-color: $cyan2, $end-color: $cyan, $start-percent: 60%, $end-percent: 100%);
+		color:$white;
+		@include transition($transition-base);
+		&:hover {
+			background:darken($cyan2, 10%);
+			@include transition($transition-base);
+		}
 	}
 }
+

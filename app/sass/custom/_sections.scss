@@ -1,97 +1,84 @@
-.hero {
+.wrapper {
     position: relative;
     overflow: hidden;
-
-    &:after {
-        top:0;
-        left:0;
-        content: "";
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        min-height: 800px;
-        background: url("/assets/images/hero.svg") no-repeat;
-        background-size: cover;
-        z-index: -1;
-    }
 }
 
 section {
     padding: 6rem 0;
 }
 
-.sect-generators {
-    @include gradient-x($start-color: #6747C0, $end-color: #8D67F8, $start-percent: 0%, $end-percent: 100%);
-}
-
 .bg {
     position: absolute;
+    z-index: -1;
 }
 
-.sect-about {
-    position: relative;
-
-    .bg-1 {
-        top: 42%;
-        right: 29px;
-    }
-
-    .bg-2 {
-        left: -150px;
-        top: 36%;
-    }
+.bg-1 {
+    top: -501px;
+    left: -590px;
+    width: 1510px;
 }
 
-.sect-generators {
-    position: relative;
-
-    .g-bg-1 {
-        top: 20%;
-        right: 87%;
-    }
-
-    .g-bg-2 {
-        top: 60%;
-        left: 4%;
-    }
-
-    .g-bg-3 {
-        top: 10%;
-        right: 3%;
-    }
-
-    .g-bg-4 {
-        bottom: 10%;
-        right: 11%;
-    }
+.bg-2 {
+    top: -10%;
+    right: -310px;
+    width: 1670px;
 }
 
-.sect-preview {
-    position: relative;
+.bg-3 {
+    top: 1081px;
+    left: 70px;
+    width: 232px;
+}
 
-    .p-bg-1 {
-        top: 20%;
-        left: 15%;
-    }
+.bg-4 {
+    top: 1241px;
+    left: -430px;
+    width: 2540px;
+}
 
-    .p-bg-2 {
-        top: 60%;
-        right: 17%;
+.bg-5 {
+    bottom: 1791px;
+    right: 200px;
+    width: 260px;
+}
+
+.bg-6 {
+    bottom: -290px;
+    right: -21%;
+    width: 200%;
+}
+
+.bg-7 {
+    bottom: 100px;
+    left: 20px;
+    width: 100px;
+}
+
+.sect-examples {
+    hr {
+        border-color: $gray-700;
     }
 }
 
 .preview {
+    color: $dark;
+    a {
+        color:$dark;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         margin-top: $preview-heading-margin;
+        color: $dark;
     }
 
     .highlight {
         padding: $preview-padding;
         background: $preview-bg;
-        color: d $preview-color;
+        color: $preview-color;
     }
 }
+
+
 
 .sect-live {
     @extend .preview;
@@ -107,4 +94,26 @@ section {
     img {
         margin-bottom: 2rem;
     }
+    a {
+        color:$primary;
+    }
 }
+
+.checkout-page,
+.article-page {
+        color:$dark;
+        background: $white;
+        h3{
+            color:$dark;
+        }
+        header {
+            background-color:$dark;
+        }
+}
+
+@media only screen and (max-device-width: 1600px) {
+    .bg-2 {
+        display: none;
+    }
+}
+

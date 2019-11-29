@@ -1,0 +1,19 @@
+.logo {
+	height: 40px;
+}
+
+@include media-breakpoint-down(sm) {
+	.logo-text {
+		display: none;
+		path {
+			fill:#05E4FC;
+		}
+
+	}
+}
+
+.navbar-toggler {
+	position: absolute;
+	top:$navbar-padding-y + $navbar-brand-padding-y;
+	right:$navbar-padding-x;
+}

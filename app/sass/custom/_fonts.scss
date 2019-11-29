@@ -1,50 +1,53 @@
 // Lato
+
+/* kulim-park-600 - latin */
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/fonts-Black.eot');
-  src: url('../fonts/fonts-Black.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fonts-Black.woff2') format('woff2'),
-       url('../fonts/fonts-Black.woff') format('woff'),
-       url('../fonts/fonts-Black.ttf') format('truetype'),
-       url('../fonts/fonts-Black.svg#ubuntubold') format('svg');
-  font-weight: bold;
+  font-family: 'Kulim Park';
   font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/font.eot'); /* IE9 Compat Modes */
+  src: local('Kulim Park SemiBold'), local('KulimPark-SemiBold'),
+       url('../fonts/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/font.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/font.ttf') format('truetype'), /* Safari, Android, iOS */
 }
-
+/* kulim-park-600italic - latin */
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/fonts-BlackItalic.eot');
-  src: url('../fonts/fonts-BlackItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fonts-BlackItalic.woff2') format('woff2'),
-       url('../fonts/fonts-BlackItalic.woff') format('woff'),
-       url('../fonts/fonts-BlackItalic.ttf') format('truetype'),
-       url('../fonts/fonts-BlackItalic.svg#ubuntubold') format('svg');
-  font-weight: bold;
+  font-family: 'Kulim Park';
   font-style: italic;
+  font-weight: normal;
+  src: url('../fonts/fontItalic.eot'); /* IE9 Compat Modes */
+  src: local('Kulim Park SemiBold Italic'), local('KulimPark-SemiBoldItalic'),
+       url('../fonts/fontItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/fontItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/fontItalic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/fontItalic.ttf') format('truetype'), /* Safari, Android, iOS */
 }
-
-
+/* kulim-park-700italic - latin */
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/fonts-Semibold.eot');
-  src: url('../fonts/fonts-Semibold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fonts-Semibold.woff2') format('woff2'),
-       url('../fonts/fonts-Semibold.woff') format('woff'),
-       url('../fonts/fonts-Semibold.ttf') format('truetype'),
-       url('../fonts/fonts-Semibold.svg#ubuntubold') format('svg');
+  font-family: 'Kulim Park';
+  font-style: italic;
   font-weight: bold;
+  src: url('../fonts/fontBolditalic.eot'); /* IE9 Compat Modes */
+  src: local('Kulim Park Bold Italic'), local('KulimPark-BoldItalic'),
+       url('../fonts/fontBolditalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/fontBolditalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/fontBolditalic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/fontBolditalic.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+/* kulim-park-700 - latin */
+@font-face {
+  font-family: 'Kulim Park';
   font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/fontBold.eot'); /* IE9 Compat Modes */
+  src: local('Kulim Park Bold'), local('KulimPark-Bold'),
+       url('../fonts/fontBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/fontBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/fontBold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/fontBold.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/fonts-SemiboldItalic.eot');
-  src: url('../fonts/fonts-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fonts-SemiboldItalic.woff2') format('woff2'),
-       url('../fonts/fonts-SemiboldItalic.woff') format('woff'),
-       url('../fonts/fonts-SemiboldItalic.ttf') format('truetype'),
-       url('../fonts/fonts-SemiboldItalic.svg#ubuntubold') format('svg');
-  font-weight: bold;
-  font-style: italic;
-}
+
 
